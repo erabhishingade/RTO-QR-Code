@@ -1,0 +1,23 @@
+[14-Mar-2018 09:52:30 UTC] PHP Notice:  Undefined index: c_user in /home/ajobaganapati/public_html/nbplsolapur.com/tias/userclass.php on line 175
+[14-Mar-2018 09:52:30 UTC] PHP Notice:  Undefined index: c_salt in /home/ajobaganapati/public_html/nbplsolapur.com/tias/userclass.php on line 176
+[15-Mar-2018 13:55:57 UTC] PHP Notice:  Undefined index: c_user in /home/ajobaganapati/public_html/nbplsolapur.com/tias/userclass.php on line 175
+[15-Mar-2018 13:55:57 UTC] PHP Notice:  Undefined index: c_salt in /home/ajobaganapati/public_html/nbplsolapur.com/tias/userclass.php on line 176
+[16-Mar-2018 09:20:09 UTC] PHP Notice:  Undefined index: c_user in /home/ajobaganapati/public_html/nbplsolapur.com/tias/userclass.php on line 175
+[16-Mar-2018 09:20:09 UTC] PHP Notice:  Undefined index: c_salt in /home/ajobaganapati/public_html/nbplsolapur.com/tias/userclass.php on line 176
+[23-Apr-2021 18:47:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php:21
+Stack trace:
+#0 /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/index.php(4): USER->getpins()
+#1 {main}
+  thrown in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 21
+[23-Apr-2021 18:58:25 UTC] PHP Notice:  Undefined index: c_user in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 175
+[23-Apr-2021 18:58:25 UTC] PHP Notice:  Undefined index: c_salt in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 176
+[23-Apr-2021 19:07:22 UTC] PHP Notice:  Undefined index: c_user in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 175
+[23-Apr-2021 19:07:22 UTC] PHP Notice:  Undefined index: c_salt in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 176
+[23-Apr-2021 19:56:26 UTC] PHP Notice:  Undefined index: c_user in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 175
+[23-Apr-2021 19:56:26 UTC] PHP Notice:  Undefined index: c_salt in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 176
+[23-Apr-2021 19:56:56 UTC] PHP Notice:  Undefined index: c_user in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 175
+[23-Apr-2021 19:56:56 UTC] PHP Notice:  Undefined index: c_salt in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 176
+[23-Apr-2021 20:05:48 UTC] PHP Notice:  Undefined index: c_user in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 175
+[23-Apr-2021 20:05:48 UTC] PHP Notice:  Undefined index: c_salt in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 176
+[23-Apr-2021 20:32:06 UTC] PHP Notice:  Undefined index: c_user in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 175
+[23-Apr-2021 20:32:06 UTC] PHP Notice:  Undefined index: c_salt in /home/w3863x2sqjs2/public_html/nbplsolapur.com/tiasfine/userclass.php on line 176

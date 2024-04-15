@@ -1,0 +1,21 @@
+$adhar1=$time.$adhar;
+		$license1=$time.$license;
+		$rc1=$time.$rc;
+		$puc1=$time.$puc;
+		$insurance1=$time.$insurance;
+		$docup=array($adhar1,$license1,$rc1,$puc1,$insurance1);
+		print_r($docup);
+		$tmp1=$_FILES['adhar']['tmp_name'];
+		$tmp2=$_FILES['license']['tmp_name'];
+		$tmp3=$_FILES['rc']['tmp_name'];
+		$tmp4=$_FILES['puc']['tmp_name'];
+		$tmp5=$_FILES['insurance']['tmp_name'];
+		array tmp=($tmp1,$tmp2,$tmp3,$tmp4,$tmp5);
+		
+		$extadhar=explode(".",$adhar);
+		$extlicense=explode(".",$license);
+		$extrc=explode(".",$rc);
+		$extpuc=explode(".",$puc);
+		$extinsurance=explode(".",$insurance);
+		if(in_array($extadhar[1],$valid_formats) && in_array($extlicense[1],$valid_formats) && in_array($extrc[1],$valid_formats) && in_array($extpuc[1],$valid_formats) && in_array($extinsurance[1],$valid_formats) )
+		{

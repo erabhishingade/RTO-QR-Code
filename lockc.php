@@ -1,0 +1,84 @@
+<?php error_reporting(0);
+require_once("cookie.php");
+require_once("userclass.php");
+$auth_user= new USER();
+$salt=$_COOKIE['u_salt'];
+$flagu=$auth_user->fetchflag($salt);
+if($flagu['u_flag']!=5)
+{
+$userdatav=$auth_user->chkuserv($salt);
+$uid=$userdatav['u_id'];
+$username=$userdatav['u_name'];
+$adid=$userdatav['ad_id'];
+$uemail=$userdatav['u_email'];
+$contact=$userdatav['u_contact'];
+$address=$userdatav['u_address'];
+$pin=$userdatav['u_pin'];
+$adharno=$userdatav['u_adharno'];
+$propic=$userdatav['profile'];
+$licenseno=$userdatav['licenseno'];
+$adhar=$userdatav['adhar'];
+$license=$userdatav['license'];
+$u_flag=$userdatav['u_flag'];
+$d_flag=$userdatav['d_flag'];
+$rc=$userdatav['RC'];
+$puc=$userdatav['PUC'];
+$insurance=$userdatav['Insurance'];
+$vtype=$userdatav['v_type'];
+$vname=$userdatav['v_name'];
+$chesseno=$userdatav['chesseno'];
+$vehicleno=$userdatav['v_no']; 
+$qrtbl=$auth_user->fetchlink($uid);
+$link=$qrtbl['qrlink'];
+}
+else
+{
+$userdatav=$auth_user->fetchflag($salt);
+$uid=$userdatav['u_id'];
+$username=$userdatav['u_name'];
+$adid=$userdatav['ad_id'];
+$uemail=$userdatav['u_email'];
+$contact=$userdatav['u_contact'];
+$address=$userdatav['u_address'];
+$pin=$userdatav['u_pin'];
+$adharno=$userdatav['u_adharno'];
+$propic=$userdatav['profile'];
+$licenseno=$userdatav['licenseno'];
+$adhar=$userdatav['adhar'];
+$license=$userdatav['license'];
+$u_flag=$userdatav['u_flag'];
+$d_flag=$userdatav['d_flag'];
+}
+$scvdata=$auth_user->scvdata($uid);
+$count=count($scvdata);
+$vid=$scvdata[0]['sc_vehiid'];
+$type=$scvdata[0]['v_type'];
+$name=$scvdata[0]['v_name'];
+$no=$scvdata[0]['v_no'];
+$cno=$scvdata[0]['chesseno'];
+$scv_flag=$scvdata[0]['scv_flag'];
+$approveflag=$scvdata[0]['approve_flag'];
+$license1=$scvdata[0]['license'];
+$rc1=$scvdata[0]['rc'];
+$puc1=$scvdata[0]['puc'];
+$insurance1=$scvdata[0]['insurance'];
+
+$f1=2;
+$f2=3;
+$fs=2;
+$fa=1;
+if($u_flag!=3 && $d_flag!=3 && $u_flag!=5 && $d_flag!=5)
+{
+	if($adhar!="" && $license!="" && $rc!="" && $puc!="" && $insurance!="")
+	{
+		$auth_user->updatef($uid,$f1,$f2);
+	}
+}	
+if($scv_flag!=2 && $approveflag!=2)
+{
+	if($license1!="" && $rc1!="" && $puc1!="" && $insurance1!="")
+	{
+		$auth_user->updateSCf($vid,$fs,$fa);
+	}
+}	
+?>
